@@ -1,0 +1,21 @@
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using NotikaIdentityEmail.Entities;
+
+namespace NotikaIdentityEmail.Controllers
+{
+    public class RegisterController : Controller
+    {
+        private readonly UserManager<AppUser> _userManager;
+
+        public RegisterController(UserManager<AppUser> userManager)
+        {
+            _userManager = userManager;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
+}
