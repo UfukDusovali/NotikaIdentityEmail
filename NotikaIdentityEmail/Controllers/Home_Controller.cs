@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace NotikaIdentityEmail.Controllers
 {
-    public class HomeController : Controller
+    public class Home_Controller : Controller
     {
         public IActionResult Index()
         {
