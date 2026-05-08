@@ -1,36 +1,22 @@
-﻿@{
-    Layout = null;
-}
-
-
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js" lang="">
 
-@await Component.InvokeAsync("_HeadUserLayoutComponentPartial")
-
-
+@await Component.InvokeAsync("_HeadUserLayoutComponent")
+ 
 <body>
 
-<!-- Start Header Top Area -->
-    @await Component.InvokeAsync("_HeadUserLayoutComponentPartial")
-    <!-- End Header Top Area -->
-    <!-- Mobile Menu start -->
-    @await Component.InvokeAsync("_MobileMenuUserLayoutComponentPartial")
-    <!-- Mobile Menu end -->
-    <!-- Main Menu area start-->
-    @await Component.InvokeAsync("_MainMenuUserLayoutComponentPartial")
-    <!-- Main Menu area End-->
-    <!-- Breadcomb area Start-->
-    @await Component.InvokeAsync("_BreadcombUserLayoutComponentPartial")
-    <!-- Breadcomb area End-->
-    <!-- Inbox area Start-->
-    @await Component.InvokeAsync("_InboxUserLayoutComponentPartial")
-    <!-- Inbox area End-->
-    <!-- Start Footer area-->
-    @await Component.InvokeAsync("_FooterUserLayoutComponentPartial")
-    <!-- End Footer area-->
+    @await Component.InvokeAsync("_HeaderUserLayoutComponent")
 
+    @await Component.InvokeAsync("_MobileMenuUserLayoutComponent")
 
+    @await Component.InvokeAsync("_NavbarUserLayoutComponent")
+
+    @await Component.InvokeAsync("_BreadcombUserLayoutComponent")
+
+    @RenderBody()
+
+    @await Component.InvokeAsync("_FooterUserLayoutComponent")
+   
 </body>
 
 </html>

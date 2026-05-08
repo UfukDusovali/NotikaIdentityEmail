@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace NotikaIdentityEmail.ViewComponents
+namespace NotikaIdentityEmail.ViewComponents.MessageViewComponents
 {
-    public class _BreadcombUserLayoutComponentPartial : ViewComponent
+    public class _MessageSidebarComponents:ViewComponent
     {
         public IViewComponentResult Invoke()
         {

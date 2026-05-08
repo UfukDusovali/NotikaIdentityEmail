@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+
+using Microsoft.AspNetCore.Mvc;
 
 namespace NotikaIdentityEmail.ViewComponents
 {
-    public class _FooterUserLayoutComponentPartial: ViewComponent
+    public class _BreadcombUserLayoutComponent : ViewComponent
     {
         public IViewComponentResult Invoke()
         {
